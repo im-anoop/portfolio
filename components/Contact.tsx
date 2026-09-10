@@ -4,6 +4,8 @@ import { useState, FormEvent } from "react";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mqpkwjbd";
+
 export default function Contact() {
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -32,10 +34,21 @@ export default function Contact() {
     if (Object.keys(validationErrors).length > 0) return;
 
     setStatus("submitting");
-    // Wire this up to your endpoint of choice (Resend, Formspree, an API route, etc.)
-    await new Promise((r) => setTimeout(r, 900));
-    setStatus("success");
-    form.reset();
+
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      if (!res.ok) throw new Error("Form submission failed");
+
+      setStatus("success");
+      form.reset();
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -125,6 +138,13 @@ export default function Contact() {
                 <p className="mt-1.5 text-xs text-brand-light">{errors.message}</p>
               )}
             </div>
+
+            {status === "error" && (
+              <p className="text-sm text-brand-light">
+                Something went wrong sending that — please try again, or email
+                me directly at hello@arjunmehta.dev.
+              </p>
+            )}
 
             <button
               type="submit"
