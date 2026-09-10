@@ -21,7 +21,7 @@ export default function Home() {
           ctaLabel="Download résumé (PDF)"
           resumeUrl="/Anoop_Kumar_Resume.pdf"
           resumeFileName="Anoop_Kumar_Resume.pdf"
-          imageSrc="/hero-portrait.jpg"
+          imageSrc="/hero-portrait.JPG"
           imageAlt="Abstract portrait mark for Anoop Kumar"
         />
         <About />
