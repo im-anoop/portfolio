@@ -1,19 +1,31 @@
 const groups = [
   {
     name: "Languages",
-    items: ["Go", "TypeScript", "Python", "Rust", "SQL"],
+    items: ["C#", "SQL","TypeScript", "JavaScript", "Powershell", "Python", "HTML", "CSS"],
   },
   {
     name: "Backend",
-    items: ["Node.js", "gRPC", "REST", "GraphQL", "PostgreSQL", "Redis"],
+    items: ["ASP.NET MVC", "ASP.NET Core", "gRPC", "REST", "GraphQL", "PostgreSQL", "Redis"],
+  },
+  {
+    name: "Frontend",
+    items: ["TypeScript", "JavaScript", "React.js", "Next.js", "TailwindCSS", "SASS", "HTML", "CSS"],
   },
   {
     name: "Infrastructure",
-    items: ["Kubernetes", "Docker", "Terraform", "AWS", "Kafka"],
+    items: ["Kubernetes", "Docker", "Terraform", "Azure", "AWS", "Kafka"],
+  },
+  {
+    name: "CMS",
+    items: ["Sitecore", "Sitecore XM Cloud", "ContentStack", "ContentFul", "Strapi"],
   },
   {
     name: "Practice",
-    items: ["System design", "Observability", "CI/CD", "Load testing"],
+    items: ["System design", "Observability", "CI/CD", "Load testing", "Performance", "Security", "TDD", "DDD"],
+  },
+  {
+    name: "Artificial Intelligence",
+    items: ["Generative AI", "GenAI", "RAG", "LLM", "Vector DBs", "OpenAI API", "Azure OpenAI Service"],
   },
 ];
 

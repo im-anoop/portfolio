@@ -8,7 +8,7 @@ const SNIPPET = [
   { t: " = {", c: "text-ink-500" },
   { t: "\n  name", c: "text-ink-900" },
   { t: ": ", c: "text-ink-500" },
-  { t: "\"Arjun Mehta\"", c: "text-brand-light" },
+  { t: "\"Anoop Kumar\"", c: "text-brand-light" },
   { t: ",", c: "text-ink-500" },
   { t: "\n  focus", c: "text-ink-900" },
   { t: ": ", c: "text-ink-500" },

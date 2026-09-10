@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 type Project = {
   title: string;
   year: string;
-  category: "Backend" | "Infra" | "Full-stack";
+  category: string;
   description: string;
   stack: string[];
   href: string;
@@ -13,56 +13,121 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Ledger",
+    title: "Amgen Inc.",
     year: "2025",
-    category: "Backend",
+    category: "Sitecore XM Cloud",
     description:
-      "Double-entry accounting engine handling reconciliation for a payments platform processing 12M transactions/day.",
-    stack: ["Go", "PostgreSQL", "Kafka"],
+      "Public medical-science portal built with Sitecore 10.4.1, XM Cloud, Next.js, GraphQL and JAMstack architecture, supporting 3M monthly visitors.",
+    stack: [
+      "Sitecore 10.4.1",
+      "XM Cloud",
+      "Next.js",
+      "React.js",
+      "GraphQL",
+      "JAMstack",
+      "C#",
+      "ASP.NET Core",
+    ],
     href: "#",
   },
   {
-    title: "Routewise",
+    title: "Kimberly-Clark / Huggies",
     year: "2024",
-    category: "Infra",
+    category: "Sitecore XM Cloud",
     description:
-      "Auto-scaling delivery routing service that cut fleet idle time by 31% across three logistics hubs.",
-    stack: ["Python", "Redis", "Kubernetes"],
+      "High-traffic consumer portal using Sitecore Helix, XM Cloud, Next.js, Content Hub and GraphQL, with Solr search and Workday API integrations.",
+    stack: [
+      "Sitecore",
+      "XM Cloud",
+      "Helix",
+      "Next.js",
+      "React.js",
+      "GraphQL",
+      "Content Hub",
+      "Solr",
+      "Workday API",
+    ],
     href: "#",
   },
   {
-    title: "Fieldnote",
+    title: "Reliance Standard Life Insurance",
     year: "2024",
-    category: "Full-stack",
+    category: "Sitecore Headless",
     description:
-      "Offline-first inspection app for warehouse teams, syncing structured reports over unreliable networks.",
-    stack: ["TypeScript", "Next.js", "SQLite"],
+      "Insurance web platforms and digital services built with Sitecore Helix, Next.js, JSS and Layout Service, including API-driven sitemap and JSON endpoint implementations.",
+    stack: [
+      "Sitecore",
+      "Helix",
+      "Next.js",
+      "JSS",
+      "Layout Service",
+      "C#",
+      "Web API",
+      "REST",
+      "SQL Server",
+    ],
     href: "#",
   },
   {
-    title: "Pulsecheck",
+    title: "KTM India",
     year: "2023",
-    category: "Infra",
+    category: "Sitecore MVC",
     description:
-      "Internal observability stack that replaced three separate vendor dashboards with one alerting pipeline.",
-    stack: ["Rust", "Prometheus", "Grafana"],
+      "Reusable Sitecore MVC components and CMS customizations for official automotive websites, following a maintainable Helix-aligned architecture.",
+    stack: [
+      "Sitecore",
+      "ASP.NET MVC",
+      "C#",
+      "Helix",
+      "JavaScript",
+      "REST APIs",
+      "CMS Customization",
+    ],
     href: "#",
   },
   {
-    title: "Cardvault",
-    year: "2022",
-    category: "Backend",
+    title: "RSM UK",
+    year: "2023",
+    category: "Sitecore SXA",
     description:
-      "PCI-scoped tokenization service for storing and rotating payment credentials across microservices.",
-    stack: ["Go", "gRPC", "Vault"],
+      "Content-rich professional-services platform using Sitecore SXA, Scriban and Solr to deliver reusable components and high-quality content search.",
+    stack: [
+      "Sitecore SXA 10.1",
+      "Scriban",
+      "Solr",
+      "Helix",
+      "C#",
+      "ASP.NET MVC",
+      "SEO",
+    ],
+    href: "#",
+  },
+  {
+    title: "Johnson & Johnson",
+    year: "2022",
+    category: "Headless CMS",
+    description:
+      "Headless CMS implementation using Contentstack with Salesforce Marketing Cloud and Aprimo DAM integrations for structured content and digital asset management.",
+    stack: [
+      "Contentstack",
+      "SFMC",
+      "Aprimo DAM",
+      "JavaScript",
+      "TypeScript",
+      "REST APIs",
+      "GraphQL",
+      "Headless CMS",
+    ],
     href: "#",
   },
 ];
 
-const filters = ["All", "Backend", "Infra", "Full-stack"] as const;
-
 export default function Projects() {
-  const [active, setActive] = useState<(typeof filters)[number]>("All");
+  const filters = useMemo(
+    () => ["All", ...Array.from(new Set(projects.map((p) => p.category)))],
+    []
+  );
+  const [active, setActive] = useState<string>("All");
 
   const visible =
     active === "All" ? projects : projects.filter((p) => p.category === active);
@@ -71,7 +136,7 @@ export default function Projects() {
     <section id="work" className="mx-auto max-w-content px-6 py-16 md:px-10 md:py-24">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <h2 className="font-head text-2xl font-semibold text-ink-900 sm:text-3xl">
-          Selected work
+          Work Experience
         </h2>
         <div className="flex flex-wrap gap-2">
           {filters.map((f) => (

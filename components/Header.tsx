@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 const links = [
   { href: "#work", label: "Work" },
   { href: "#toolkit", label: "Toolkit" },
+  { href: "#credentials", label: "Credentials" },
   { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },
 ];
@@ -31,7 +32,7 @@ export default function Header() {
           <span className="flex h-7 w-7 items-center justify-center rounded-sm bg-brand text-sm text-white">
             A
           </span>
-          Arjun Mehta
+          Anoop Kumar
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

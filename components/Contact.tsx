@@ -65,13 +65,13 @@ export default function Contact() {
           </p>
           <div className="mt-8 flex flex-col gap-2 font-mono text-sm text-white/80">
             <a href="mailto:hello@arjunmehta.dev" className="link-reveal w-fit">
-              hello@arjunmehta.dev
+              iamanoopav@gmail.com
             </a>
-            <a href="https://github.com" className="link-reveal w-fit">
-              github.com/arjunmehta
+            <a href="https://github.com/im-anoop" className="link-reveal w-fit">
+              github.com/im-anoop
             </a>
-            <a href="https://linkedin.com" className="link-reveal w-fit">
-              linkedin.com/in/arjunmehta
+            <a href="https://linkedin.com/in/im-anoop-kumar/" className="link-reveal w-fit">
+              linkedin.com/in/im-anoop-kumar
             </a>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function Contact() {
           <div className="flex flex-col justify-center rounded-md border border-white/10 bg-white/5 p-8">
             <p className="font-head text-lg font-semibold text-white">Message sent.</p>
             <p className="mt-2 text-sm text-white/60">
-              Thanks for reaching out — I&apos;ll reply within a day or two.
+              Thanks for reaching out — I&apos;ll reply within a day.
             </p>
             <button
               onClick={() => setStatus("idle")}

@@ -21,6 +21,7 @@ Open http://localhost:3000.
 - `components/About.tsx` — bio and stats
 - `components/Projects.tsx` — filterable project list (client-side)
 - `components/Toolkit.tsx` — grouped skills
+- `components/CredentialShowcase.tsx` — auto-scrolling certification carousel
 - `components/Experience.tsx` — role timeline
 - `components/Contact.tsx` — validated contact form
 - `components/Footer.tsx`
@@ -44,9 +45,15 @@ clicking the CTA saves the file with no extra JS. Replace
 update `resumeUrl`/`resumeFileName` in `app/page.tsx`), and swap
 `public/hero-portrait.svg` for a real photo or graphic if you'd like.
 
-**Contact form** — `components/Contact.tsx` currently simulates a submit.
-Wire the `onSubmit` handler to an API route, or a service like Resend or
-Formspree, to actually deliver messages.
+**Credentials carousel** — `components/CredentialShowcase.tsx` auto-scrolls
+left to right, pauses 2s at each end, then reverses — and pauses on
+hover/keyboard focus so a card can actually be read. Edit the `credentials`
+array to add, remove, or reorder certifications.
+
+**Contact form** — `components/Contact.tsx` submits to Formspree
+(`https://formspree.io/f/mqpkwjbd`). To point it at your own form, swap the
+`FORMSPREE_ENDPOINT` constant at the top of the file, or replace the `fetch`
+call with your own API route / email service.
 
 ## Deploy
 
