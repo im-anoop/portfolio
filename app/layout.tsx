@@ -24,9 +24,9 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Arjun Mehta — Software Engineer",
+  title: "Anoop Kumar — Software Engineer",
   description:
-    "Backend-leaning full-stack engineer building fast, reliable systems. Portfolio of Arjun Mehta.",
+    "Backend-leaning full-stack engineer building fast, reliable systems. Portfolio of Anoop Kumar.",
 };
 
 export default function RootLayout({

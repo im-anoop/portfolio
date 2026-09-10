@@ -1,26 +1,27 @@
 const roles = [
   {
-    period: "2023 — Present",
+    period: "2024 — Present",
     title: "Senior Backend Engineer",
-    org: "Northbeam Logistics",
+    org: "Capgemini",
     description:
-      "Own the routing and settlement services powering same-day delivery for three metro regions.",
+      "Working on a global enterprise application for a leading financial and health tech services company, building scalable backend services and APIs.",
+  },
+   {
+    period: "2023 — 2024",
+    title: "Software Engineer",
+    org: "Virtusa Polaris",
+    description:
+      "Worked on full-stack development for global enterprise applications, building APIs, dashboards, and supporting production fixes.",
   },
   {
     period: "2021 — 2023",
     title: "Backend Engineer",
-    org: "Paylane",
+    org: "Espire Infolabs",
     description:
-      "Built the ledger and reconciliation systems for a card-issuing platform, from zero to production.",
-  },
-  {
-    period: "2020 — 2021",
-    title: "Software Engineer",
-    org: "Studio Twelve",
-    description:
-      "Full-stack work for early-stage clients — APIs, dashboards, and the occasional emergency fix.",
-  },
+      "Built backend services for a tax consulting firm, taking the application from initial development to production.",
+  }
 ];
+
 
 export default function Experience() {
   return (
