@@ -20,7 +20,7 @@ export default function Home() {
           description="A one-page summary of the roles, systems, and stack above — useful for a quick screen or forwarding to your team."
           ctaLabel="Download résumé (PDF)"
           resumeUrl="/Anoop_Kumar_Resume.pdf"
-          resumeFileName="Anoop_Kumar_Resume.pdf"
+          resumeFileName="Anoop_Kumar_Sitecore_Developer.pdf"
           imageSrc="/hero-portrait.JPG"
           imageAlt="Abstract portrait mark for Anoop Kumar"
         />
