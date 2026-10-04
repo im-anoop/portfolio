@@ -8,6 +8,7 @@ const links = [
   { href: "#credentials", label: "Credentials" },
   { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },
+  { href: "https://aifirstengineer.wordpress.com/", label: "Blog" },
 ];
 
 export default function Header() {
