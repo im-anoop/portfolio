@@ -104,12 +104,13 @@ const projects: Project[] = [
   },
   {
     title: "Johnson & Johnson",
-    year: "2022",
+    year: "2026",
     category: "Headless CMS",
     description:
       "Headless CMS implementation using Contentstack with Salesforce Marketing Cloud and Aprimo DAM integrations for structured content and digital asset management.",
     stack: [
       "Contentstack",
+      ".NET SDK",
       "SFMC",
       "Aprimo DAM",
       "JavaScript",
