@@ -36,16 +36,16 @@ const projects: Project[] = [
     year: "2025",
     category: "SitecoreAI CMS",
     description:
-      "Public medical-science portal built with Sitecore 10.4.1, XM Cloud, Next.js, GraphQL and JAMstack architecture, supporting 3M monthly visitors.",
+      "Public medical-science portal built with SitecoreAI CMS, Next.js, GraphQL and JAMstack architecture, supporting 3M monthly visitors.",
     stack: [
-      "Sitecore 10.4.1",
-      "XM Cloud",
+      "SitecoreAI CMS",
       "Next.js",
       "React.js",
       "GraphQL",
       "JAMstack",
       "C#",
       "ASP.NET Core",
+	  "Middlware"
     ],
     href: "https://www.amgen.com/",
   },
