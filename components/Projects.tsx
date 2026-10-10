@@ -34,7 +34,7 @@ const projects: Project[] = [
   {
     title: "Amgen Inc.",
     year: "2025",
-    category: "Sitecore XM Cloud",
+    category: "SitecoreAI CMS",
     description:
       "Public medical-science portal built with Sitecore 10.4.1, XM Cloud, Next.js, GraphQL and JAMstack architecture, supporting 3M monthly visitors.",
     stack: [
@@ -65,6 +65,8 @@ const projects: Project[] = [
       "Content Hub",
       "Solr",
       "Workday API",
+	  "SEO",
+	  "AEO"
     ],
     href: "https://www.kimberly-clark.com/en-us/",
   },
@@ -76,8 +78,8 @@ const projects: Project[] = [
       "Insurance web platforms and digital services built with Sitecore Helix, Next.js, JSS and Layout Service, including API-driven sitemap and JSON endpoint implementations.",
     stack: [
       "Sitecore",
-      ".Net MVC"
-      "AWS Lambda"
+      ".Net MVC",
+      "AWS Lambda",
       "Helix",
       "Next.js",
       "JSS",
