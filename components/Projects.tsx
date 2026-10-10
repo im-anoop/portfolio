@@ -13,6 +13,25 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Johnson & Johnson",
+    year: "2026",
+    category: "Headless CMS",
+    description:
+      "Headless CMS implementation using Contentstack with Salesforce Marketing Cloud and Aprimo DAM integrations for structured content and digital asset management.",
+    stack: [
+      "Contentstack",
+      ".NET SDK",
+      "SFMC",
+      "Aprimo DAM",
+      "JavaScript",
+      "TypeScript",
+      "REST APIs",
+      "GraphQL",
+      "Headless CMS",
+    ],
+    href: "https://www.jnj.com",
+  },
+  {
     title: "Amgen Inc.",
     year: "2025",
     category: "Sitecore XM Cloud",
@@ -28,7 +47,7 @@ const projects: Project[] = [
       "C#",
       "ASP.NET Core",
     ],
-    href: "#",
+    href: "https://www.amgen.com/",
   },
   {
     title: "Kimberly-Clark / Huggies",
@@ -47,16 +66,18 @@ const projects: Project[] = [
       "Solr",
       "Workday API",
     ],
-    href: "#",
+    href: "https://www.kimberly-clark.com/en-us/",
   },
   {
     title: "Reliance Standard Life Insurance",
-    year: "2024",
+    year: "2023",
     category: "Sitecore Headless",
     description:
       "Insurance web platforms and digital services built with Sitecore Helix, Next.js, JSS and Layout Service, including API-driven sitemap and JSON endpoint implementations.",
     stack: [
       "Sitecore",
+      ".Net MVC"
+      "AWS Lambda"
       "Helix",
       "Next.js",
       "JSS",
@@ -66,11 +87,11 @@ const projects: Project[] = [
       "REST",
       "SQL Server",
     ],
-    href: "#",
+    href: "https://www.reliancestandardlife.com/",
   },
   {
     title: "KTM India",
-    year: "2023",
+    year: "2022",
     category: "Sitecore MVC",
     description:
       "Reusable Sitecore MVC components and CMS customizations for official automotive websites, following a maintainable Helix-aligned architecture.",
@@ -83,11 +104,11 @@ const projects: Project[] = [
       "REST APIs",
       "CMS Customization",
     ],
-    href: "#",
+    href: "https://www.ktmindia.com/",
   },
   {
     title: "RSM UK",
-    year: "2023",
+    year: "2021",
     category: "Sitecore SXA",
     description:
       "Content-rich professional-services platform using Sitecore SXA, Scriban and Solr to deliver reusable components and high-quality content search.",
@@ -100,27 +121,8 @@ const projects: Project[] = [
       "ASP.NET MVC",
       "SEO",
     ],
-    href: "#",
-  },
-  {
-    title: "Johnson & Johnson",
-    year: "2026",
-    category: "Headless CMS",
-    description:
-      "Headless CMS implementation using Contentstack with Salesforce Marketing Cloud and Aprimo DAM integrations for structured content and digital asset management.",
-    stack: [
-      "Contentstack",
-      ".NET SDK",
-      "SFMC",
-      "Aprimo DAM",
-      "JavaScript",
-      "TypeScript",
-      "REST APIs",
-      "GraphQL",
-      "Headless CMS",
-    ],
-    href: "#",
-  },
+    href: "https://www.rsmuk.com/",
+  }
 ];
 
 export default function Projects() {
